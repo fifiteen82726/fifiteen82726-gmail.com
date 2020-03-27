@@ -24,7 +24,7 @@ def hello():
 
 @app.route('/home')
 def home():
-    return render_template('home.html', posts=posts)
+    return render_template('home.html', posts=posts, title='Title')
 
 if __name__  == '__main__':
     app.run()
