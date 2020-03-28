@@ -21,11 +21,6 @@ posts = [
 ]
 
 @app.route('/')
-def hello():
-    name = request.args.get("name", "2212")
-    return f'Hello, {escape(name)}!'
-
-@app.route('/home')
 def home():
     return render_template('home.html', posts=posts, title='Title')
 
